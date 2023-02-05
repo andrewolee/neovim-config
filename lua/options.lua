@@ -33,7 +33,7 @@ vim.opt.smartcase = true
 
 -- Terminal options
 vim.opt.termguicolors = true
-vim.opt.updatetime = 50
+vim.opt.updatetime = 500
 
 -- Split options
 vim.opt.splitright = true
@@ -41,3 +41,6 @@ vim.opt.splitbelow = true
 
 -- Use system clipboard for copy/paste
 vim.opt.clipboard:append { 'unnamedplus' }
+
+-- Netrw
+
