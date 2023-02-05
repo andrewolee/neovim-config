@@ -1,13 +1,21 @@
 local builtin = require('telescope.builtin')
 
+local theme = {
+    theme = 'dropdown',
+    prompt_title = false,
+    preview_title = false,
+    borderchars = {
+        { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
+        prompt = {"─", "│", " ", "│", '┌', '┐', "│", "│"},
+        results = {"─", "│", "─", "│", "├", "┤", "┘", "└"},
+        preview = { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
+    },
+}
+
 require('telescope').setup{
     pickers = {
-        git_files = {
-            theme = 'dropdown',
-        },
-        live_grep = {
-            theme = 'dropdown',
-        }
+        git_files = theme,
+        live_grep = theme,
     }
 }
 
