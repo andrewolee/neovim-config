@@ -40,6 +40,15 @@ require('packer').startup(function(use)
         }
     }
 
-    -- Tokyo Night Theme
-    use 'folke/tokyonight.nvim'
+    -- Rose Pine Theme
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+    })
+
+    -- Autopairs
+    use 'windwp/nvim-autopairs'
+
+    -- Indent Blankline
+    use 'lukas-reineke/indent-blankline.nvim'
 end)
