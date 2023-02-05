@@ -1,5 +1,5 @@
 require("rose-pine").setup({
-    transparent = true,
+    disable_background = true
 })
 
 vim.cmd('colorscheme rose-pine')
