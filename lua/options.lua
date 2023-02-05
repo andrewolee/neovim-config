@@ -14,6 +14,8 @@ vim.opt.laststatus = 2
 vim.opt.signcolumn = 'yes'
 vim.opt.completeopt = { 'menuone', 'noselect' }
 vim.opt.showcmd = true
+vim.opt.swapfile = false
+vim.opt.backup = false
 
 -- Tab options
 vim.opt.expandtab = true
@@ -24,12 +26,14 @@ vim.opt.smartindent = true
 vim.opt.backspace = { 'indent', 'eol', 'start' }
 
 -- Search options
-vim.opt.hlsearch = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- Color options
+-- Terminal options
 vim.opt.termguicolors = true
+vim.opt.updatetime = 50
 
 -- Split options
 vim.opt.splitright = true
